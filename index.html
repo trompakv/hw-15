@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HW-15</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
+        <style>
+            .holder {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 150px;
+
+                background-color: red;
+
+                flex-grow: 1;
+
+                font-size: 50px;
+                font-weight: 700;
+            }
+
+            .i1,
+            .i5 {
+                flex-basis: calc((100% - 30px) / 2);
+            }
+
+            .i2,
+            .i3,
+            .i4 {
+                flex-basis: calc((100% - 30px) / 3);
+            }
+
+            .i1 {
+                order: 0;
+                background-color: #ff6f61;
+            }
+            .i2 {
+                order: 3;
+                background-color: #5b88a3;
+            }
+            .i3 {
+                order: 2;
+                background-color: #6b3fa0;
+            }
+            .i4 {
+                order: 4;
+                background-color: #2b7a2a;
+            }
+            .i5 {
+                order: 1;
+                background-color: #fcb045;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="holder">
+            <div class="item i1">1</div>
+            <div class="item i2">2</div>
+            <div class="item i3">3</div>
+            <div class="item i4">4</div>
+            <div class="item i5">5</div>
+        </div>
+    </body>
+</html>
